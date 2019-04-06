@@ -1,0 +1,36 @@
+!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset= "UTF-8">
+        <title>GifTastic</title>
+        <link rel= "stylesheet" href= "assets/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class= "container">
+            <h1>Gify World</h1>
+
+            <p></p>
+            <!-- buttons will be dumped here -->
+            <div id= "buttons-view"></div>
+
+            <p></p>
+
+            <!-- user input for the search -->
+            <form id="cars-form">
+                <label for= "cars-input">Search for more GIFs</label>
+                <input type= "text" id="cars-input">
+                <br>
+                
+                <!-- triggers AJAX call and new button to be added -->
+                <input id= "find-cars" type= "submit" value= "Search Cars">
+
+                <!-- button/JSON contents dumped here -->
+                <div id= "carsGIFview"></div>
+            </form>
+
+        </div>
+        <script src= "assets/javascript/app.js"></script>
+    </body>
+</html>
